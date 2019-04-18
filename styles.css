@@ -1,0 +1,99 @@
+body
+{
+	background-image: url('/Images/background.png');
+	font-family: Helvetica, Arial, sans-serif;
+	color: White;
+}
+
+a
+{
+	color: Yellow;
+}
+
+img
+{
+	border: none;
+}
+
+
+.page
+{
+	position: relative;
+	width: 90%;
+	margin: 1em auto;
+	font-size: large;
+}
+
+.header
+{
+	font-family: 'Wendy One', Trebuchet MS, Helvetica, Arial, sans-serif;
+	padding-bottom: 13px;
+	border-bottom: solid 2px Yellow;
+	margin-bottom: 30px;
+}
+.header a
+{
+	text-decoration: none;	
+}
+.header a:hover
+{
+	text-decoration: underline;	
+}
+
+.headerText
+{
+	position: absolute;
+	top: -3px;
+	left: 95px;
+	letter-spacing: 0.15em;
+	color: White;
+	font-size: 55px;
+}
+
+.home
+{
+	font-size: 20px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+h1
+{
+	font-family: Trebuchet MS;
+	color: White;
+	font-size: 40px;
+	text-align: center;
+}
+
+h2
+{
+	font-family: Forte;
+	margin: 0 auto;
+	color: White;
+	font-size: xx-large;
+}
+
+#dowdesign
+{
+	font-size:38px;
+}
+#dowdesign A
+{
+	color:White;
+}
+
+.contactMe 
+{
+	position:relative;
+	text-align: center;
+}
+
+.contactMe a
+{
+	color: White;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+
