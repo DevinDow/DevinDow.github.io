@@ -36,10 +36,6 @@ img
 {
 	text-decoration: none;	
 }
-.header a:hover
-{
-	text-decoration: underline;	
-}
 
 .headerText
 {
@@ -49,6 +45,18 @@ img
 	letter-spacing: 0.15em;
 	color: White;
 	font-size: 55px;
+}
+
+.socialLinks
+{
+	position: absolute;
+	top: 15px;
+	left: 600px;
+}
+
+.socialLinks img
+{
+  height: 32px;
 }
 
 .home
