@@ -21,12 +21,14 @@
 		$(document).ready(function () {
 
 			$("#divLinks").hide();
-			$("#divDowDesign").hide();
+			// $("#divDowDesign").hide();
 
-			$(".header").hide().fadeIn(1500, function () {
-				$("#divDowDesign").slideDown(4000);
-				$("#divLinks").delay(2000).slideDown(5000);
+			$(".header").hide().fadeIn(2000, function () {
+				// $("#divDowDesign").slideDown(2000);
+				// $("#divLinks").slideDown(1000);
 			});
+
+			$("#divLinks").slideDown(1000);
 		});
 	</script>
 
@@ -64,30 +66,33 @@
 							<img alt="Android Apps" src="Images/MyFitnessRoutines.png" height="240" /><br />
 							Android Apps on App Store<br />
 						</a>
-					</div>			
+						<!-- <a href="https://github.com/DevinDow/MyFitnessRoutines/releases" target="_blank">
+							Android Apps on GitHub<br />
+						</a> -->
+					</div>
 
-					<div style="position:absolute; left:395px; top:30px; width:200px;">
-						<a href="Reading.html">
-							<img alt="Brave New World" src="Images/BraveNewWorld.jpg" height="229" /><br />
-							My Reading List<br />
-						</a>
-					</div>			
-
-					<div style="position:absolute; left:650px; top:50px">
+					<div style="position:absolute; left:380px; top:50px">
 						<a href="VisionBoard.html">
 							<img alt="VisionBoard" src="Images/VisionBoard.jpg" height="254" /><br />
 							VisionBoard for Windows<br />
 						</a>
-					</div>			
+					</div>
+
+					<div style="position:absolute; left:840px; top:60px; width:200px;">
+						<a href="Reading.html">
+							<img alt="Brave New World" src="Images/BraveNewWorld.jpg" height="229" /><br />
+							My Reading List<br />
+						</a>
+					</div>
 
 				</div>
 			
 				<br />
-				<hr />
+				<!-- <hr /> -->
 			</div>
 
 
-			<br />
+			<!-- <br />
 			
 
 			<div id="divDowDesign">
@@ -104,7 +109,7 @@
 
 				<br />
  				<hr />
-			</div>
+			</div> -->
 			
 		</div>
 
