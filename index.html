@@ -20,25 +20,26 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 
-			$("#divLinks").hide();
+			$("#divContent").hide();
 			$("#divAndroid").hide();
 			$("#divVisionBoard").hide();
 			$("#divReading").hide();
 
-			$(".header").hide().fadeIn(1000, function () {
-				$("#divAndroid").slideDown(2000);
-				$("#divVisionBoard").slideDown(2000);
-				$("#divReading").slideDown(2000);
+			$("#divHeader").hide().fadeIn(1000, function () {
+				$("#divContent").show(500, function () {
+					$("#divAndroid").slideDown(2000);
+					$("#divVisionBoard").slideDown(2000);
+					$("#divReading").slideDown(2000);
+				});
 			});
 
-			$("#divLinks").slideDown(1000);
 		});
 	</script>
 
 	<div class="page">
 
 
-		<div class="header">
+		<div id="divHeader">
 			<img src="Images/DD.png" alt="DevinDow" height="64" />
 			<div id="headerTextAndLinks">
 				<span class="headerText">DevinDow.com</span>
@@ -61,7 +62,7 @@
 		</div>
 		
 
-		<div style="position:relative; text-align:center;">
+		<div id="divContent" style="position:relative; text-align:center;">
 
 			<div id="divAndroid">
 				<a href="http://apps.devindow.com" target="_blank">

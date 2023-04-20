@@ -25,14 +25,14 @@ img
 	font-size: large;
 }
 
-.header
+#divHeader
 {
 	font-family: 'Wendy One', Trebuchet MS, Helvetica, Arial, sans-serif;
 	padding-bottom: 13px;
 	border-bottom: solid 2px Yellow;
 	margin-bottom: 30px;
 }
-.header a
+#divHeader a
 {
 	text-decoration: none;	
 }
@@ -58,14 +58,6 @@ img
 .socialLinks img
 {
   height: 32px;
-}
-
-.home
-{
-	font-size: 20px;
-	position: absolute;
-	right: 0px;
-	top: 0px;
 }
 
 h1
