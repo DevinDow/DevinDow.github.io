@@ -37,11 +37,15 @@ img
 	text-decoration: none;	
 }
 
+#headerTextAndLinks
+{
+    position: absolute;
+    top: -12px;
+    left: 95px;
+}
+
 .headerText
 {
-	position: absolute;
-	top: -3px;
-	left: 95px;
 	letter-spacing: 0.15em;
 	color: White;
 	font-size: 55px;
@@ -49,9 +53,6 @@ img
 
 .socialLinks
 {
-	position: absolute;
-	top: 15px;
-	left: 600px;
 }
 
 .socialLinks img
