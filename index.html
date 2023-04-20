@@ -21,11 +21,14 @@
 		$(document).ready(function () {
 
 			$("#divLinks").hide();
-			// $("#divDowDesign").hide();
+			$("#divAndroid").hide();
+			$("#divVisionBoard").hide();
+			$("#divReading").hide();
 
-			$(".header").hide().fadeIn(2000, function () {
-				// $("#divDowDesign").slideDown(2000);
-				// $("#divLinks").slideDown(1000);
+			$(".header").hide().fadeIn(1000, function () {
+				$("#divAndroid").slideDown(2000);
+				$("#divVisionBoard").slideDown(2000);
+				$("#divReading").slideDown(2000);
 			});
 
 			$("#divLinks").slideDown(1000);
@@ -58,58 +61,37 @@
 
 		<div style="position:relative; text-align:center;">
 
-			<div id="divLinks">
-				<div style="position:relative; height:360px; top:0px; left:0px; width:1100px;"> 
-			
-					<div style="position:absolute; left:110px; top:60px;">
-						<a href="http://apps.devindow.com" target="_blank">
-							<img alt="Android Apps" src="Images/MyFitnessRoutines.png" height="240" /><br />
-							Android Apps on App Store<br />
-						</a>
-						<!-- <a href="https://github.com/DevinDow/MyFitnessRoutines/releases" target="_blank">
-							Android Apps on GitHub<br />
-						</a> -->
-					</div>
-
-					<div style="position:absolute; left:380px; top:50px;">
-						<a href="VisionBoard.html">
-							<img alt="VisionBoard" src="Images/VisionBoard.jpg" height="254" /><br />
-							VisionBoard for Windows<br />
-						</a>
-					</div>
-
-					<div style="position:absolute; left:880px; top:60px;">
-						<a href="Reading.html">
-							<img alt="Brave New World" src="Images/BraveNewWorld.jpg" height="229" /><br />
-							My Reading List<br />
-						</a>
-					</div>
-
-				</div>
-			
-				<br />
-				<!-- <hr /> -->
+			<div id="divAndroid">
+				<a href="http://apps.devindow.com" target="_blank">
+					<img alt="Android Apps" src="Images/MyFitnessRoutines.png" height="240" /><br />
+					Android Apps on App Store<br />
+				</a>
+				<!-- <a href="https://github.com/DevinDow/MyFitnessRoutines/releases" target="_blank">
+					Android Apps on GitHub<br />
+				</a> -->
 			</div>
 
+			<br />
+			<hr />
+			<br />
 
-			<!-- <br />
-			
+			<div id="divVisionBoard">
+				<a href="VisionBoard.html">
+					<img alt="VisionBoard" src="Images/VisionBoard.jpg" height="254" /><br />
+					VisionBoard for Windows<br />
+				</a>
+			</div>
 
-			<div id="divDowDesign">
-				<div style="position:relative; height:350px; margin-top:10px;"> 
-				
-					<div style="position:absolute; left:260px; top:20px">
-						<a href="http://www.AndreaMakeup.com" target="_blank">
-							<img alt="AndreaMakeup.com" src="Images/AndreaMakeup.jpg" height="257" /><br />
-							AndreaMakeup.com<br />
-						</a>
-					</div>
+			<br />
+			<hr />
+			<br />
 
-				</div>
-
-				<br />
- 				<hr />
-			</div> -->
+			<div id="divReading">
+				<a href="Reading.html">
+					<img alt="Brave New World" src="Images/BraveNewWorld.jpg" height="229" /><br />
+					My Reading List<br />
+				</a>
+			</div>
 			
 		</div>
 
