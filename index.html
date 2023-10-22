@@ -21,12 +21,14 @@
 		$(document).ready(function () {
 
 			$("#divContent").hide();
+			$("#divOthello").hide();
 			$("#divAndroid").hide();
 			$("#divVisionBoard").hide();
 			$("#divReading").hide();
 
 			$("#divHeader").hide().fadeIn(1000, function () {
 				$("#divContent").show(500, function () {
+					$("#divOthello").slideDown(2000);
 					$("#divAndroid").slideDown(2000);
 					$("#divVisionBoard").slideDown(2000);
 					$("#divReading").slideDown(2000);
@@ -66,6 +68,30 @@
 		
 
 		<div id="divContent" style="position:relative; text-align:center;">
+
+			<div id="divOthello">
+				<a href="othello" target="_blank">
+					<img alt="Android Apps" src="Images/Othello.png" height="240" /><br />
+					Play my Othello app in your browser<br />
+				</a>
+				<br />
+				Othello GitHub Links: 
+				<a href="https://github.com/DevinDow/Flutter-Othello" target="_blank">
+					Flutter Othello Source Code
+				</a>
+				, 
+				<a href="https://github.com/DevinDow/Othello" target="_blank">
+					Windows Othello w/ Computer Player levels
+				</a>
+				&
+				<a href="https://github.com/DevinDow/Othello/releases" target="_blank">
+					Windows Release Build
+				</a>
+			</div>
+
+			<br />
+			<hr />
+			<br />
 
 			<div id="divAndroid">
 				<a href="http://apps.devindow.com" target="_blank">
