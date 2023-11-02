@@ -18058,7 +18058,7 @@ _.b=b
 _.c=null
 _.d=c
 _.e=d
-_.w=_.r=_.f=!1},
+_.x=_.w=_.r=_.f=!1},
 AS:function AS(a,b){this.c=a
 this.a=b},
 NM(a){var s=new A.b0(new Float64Array(16))
@@ -52368,7 +52368,8 @@ if(r.d.length!==0&&r.w){r=s.e
 r===$&&A.d()
 r.sn(r.a)
 s.e.dz()
-s.a.c.w=!1}return new A.lg(1,B.iG,new A.oZ(new A.TL(s,a),null),null)},
+r=s.a.c
+r.x=r.w=!1}return new A.lg(1,B.iG,new A.oZ(new A.TL(s,a),null),null)},
 Oi(a,b){var s,r,q=this.a.c
 if(q.r){A.vf(b,"Game Over","press New Game to play again")
 return}if(q.e){A.vf(b,"Computer's Turn","Computer algorithm is thinking")
@@ -52378,7 +52379,10 @@ r=new A.cD(B.c.cm(s.a/($.cM/8))+1,B.c.cm(s.b/($.cM/8))+1)
 A.na("Tapped at coord "+r.h(0),"Board")
 this.a.Rz(r)}}
 A.TM.prototype={
-$1(a){if(a===B.V)this.a.a.SI()},
+$1(a){var s
+if(a===B.V){s=this.a.a
+s.c.x=!0
+s.SI()}},
 $S:3}
 A.TL.prototype={
 $2(a,b){var s=null,r=Math.min(b.b,b.d),q=this.a,p=q.d
@@ -52442,9 +52446,10 @@ s=$.cM
 q=this.c
 q===$&&A.d()
 i=0.4*(s/8)*Math.abs(Math.cos(q))
-h=q>0&&q<1.5707963267948966
-for(s=this.b,g=0;g<8;g=f)for(f=g+1,e=0;e<8;++e){s===$&&A.d()
-d=s.a[e][g]
+s=this.b
+s===$&&A.d()
+h=!s.x&&q<1.5707963267948966
+for(g=0;g<8;g=f)for(f=g+1,e=0;e<8;++e){d=s.a[e][g]
 if(d===B.bB)continue
 q=$.cM/8
 c=q/2
@@ -52464,11 +52469,7 @@ if(a0.i(0,s.c))a5.ei(new A.u(b,a),0.4*($.cM/8),j)}}a3=$.ab().aF()
 a3.sbn(B.T)
 a3.scE(0)
 a3.sa3(B.f7)
-s===$&&A.d()
-s=s.b
-q=s.length
-a4=0
-for(;a4<s.length;s.length===q||(0,A.A)(s),++a4){a0=s[a4]
+for(s=s.b,q=s.length,a4=0;a4<s.length;s.length===q||(0,A.A)(s),++a4){a0=s[a4]
 c=$.cM/8
 a2=c/2
 a5.ei(new A.u((a0.a-1)*c+a2,(a0.b-1)*c+a2),0.2*c,a3)}},
