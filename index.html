@@ -1,8 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<title>Devin Dow .com</title>
 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="Devin, Dow, VisionBoard, Vision, Board" />
 	<meta name="description" content="Devin Dow" />
 
@@ -11,37 +14,29 @@
 	<link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
 
 	<meta name="google-site-verification" content="hsJxFkccqSqtUTz40huuqXBb41TSM0z9NaZ1CUdok9g" />
-</head>
 
-<body>
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script>
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function () {
 
-			$("#divContent").hide();
-			$("#divOthello").hide();
-			$("#divAndroid").hide();
-			$("#divVisionBoard").hide();
-			$("#divReading").hide();
+			$("#divContent, #divOthello, #divAndroid, #divVisionBoard, #divReading").hide();
 
 			$("#divHeader").hide().fadeIn(1000, function () {
 				$("#divContent").show(500, function () {
-					$("#divOthello").slideDown(2000);
-					$("#divAndroid").slideDown(2000);
-					$("#divVisionBoard").slideDown(2000);
-					$("#divReading").slideDown(2000);
+					$("#divOthello, #divAndroid, #divVisionBoard, #divReading").slideDown(2000);
 				});
 			});
 
 		});
 	</script>
+</head>
 
+<body>
 	<div class="page">
 
 
-		<div id="divHeader">
+		<header id="divHeader">
 			<img src="Images/DD.png" alt="DevinDow" height="64" />
 			<div id="headerTextAndLinks">
 				<span class="headerText">DevinDow.com</span>
@@ -64,12 +59,12 @@
 					</a>
 				</span>
 			</div>
-		</div>
+		</header>
 		
 
-		<div id="divContent" style="position:relative; text-align:center;">
+		<main id="divContent" style="position:relative; text-align:center;">
 
-			<div id="divOthello">
+			<section id="divOthello">
 				<a href="othello" target="_blank">
 					<img alt="Android Apps" src="Images/Othello.gif" height="241" /><br />
 					My "Othello" app<br />
@@ -83,13 +78,13 @@
 				<a href="https://github.com/DevinDow/Othello" target="_blank">
 					C#
 				</a>
-			</div>
+			</section>
 
 			<br />
 			<hr />
 			<br />
 
-			<div id="divAndroid">
+			<section id="divAndroid">
 				<a href="http://apps.devindow.com" target="_blank">
 					<img alt="Android Apps" src="Images/MyFitnessRoutines.png" height="240" /><br />
 					My "My Fitness Routines" Android app<br />
@@ -106,31 +101,31 @@
 				<a href="https://github.com/DevinDow/Flutter-fitness" target="_blank">
 					Flutter
 				</a>
-			</div>
+			</section>
 
 			<br />
 			<hr />
 			<br />
 
-			<div id="divVisionBoard">
+			<section id="divVisionBoard">
 				<a href="VisionBoard.html">
 					<img alt="VisionBoard" src="Images/VisionBoard.gif" height="254" /><br />
 					My "VisionBoard" app for Windows<br />
 				</a>
-			</div>
+			</section>
 
 			<br />
 			<hr />
 			<br />
 
-			<div id="divReading">
+			<section id="divReading">
 				<a href="Reading.html">
 					<img alt="Brave New World" src="Images/BraveNewWorld.jpg" height="229" /><br />
 					My Reading List<br />
 				</a>
-			</div>
+			</section>
 			
-		</div>
+		</main>
 
 	</div>
 	

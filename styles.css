@@ -39,9 +39,9 @@ img
 
 #headerTextAndLinks
 {
-    position: absolute;
-    top: -12px;
-    left: 95px;
+	position: absolute;
+	top: -12px;
+	left: 95px;
 }
 
 .headerText
@@ -57,7 +57,7 @@ img
 
 .socialLinks img
 {
-  height: 32px;
+	height: 32px;
 }
 
 h1
