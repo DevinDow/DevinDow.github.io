@@ -49,6 +49,9 @@ img
 	padding-bottom: 13px;
 	border-bottom: solid 2px Yellow;
 	margin-bottom: 30px;
+	/* CSS animation disabled - using jQuery instead */
+	/* opacity: 0; */
+	/* animation: fadeIn 1s ease-in forwards; */
 }
 
 /* Remove underline from header links */
@@ -116,6 +119,38 @@ section {
 
 
 /* ============================================
+   ANIMATIONS (DISABLED - Using jQuery instead)
+   ============================================ */
+
+/* CSS animations commented out - jQuery handles animations */
+/*
+Fade in animation
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+Slide down animation - matches jQuery slideDown behavior
+jQuery slideDown animates height from 0 to auto, we use max-height as a workaround
+@keyframes slideDown {
+	0% {
+		opacity: 0;
+		max-height: 0;
+		overflow: hidden;
+	}
+	100% {
+		opacity: 1;
+		max-height: 800px;
+		overflow: visible;
+	}
+}
+*/
+
+/* ============================================
    MAIN CONTENT
    ============================================ */
 
@@ -123,6 +158,23 @@ section {
 #divContent {
 	position: relative;
 	text-align: center;
+	/* CSS animation disabled - using jQuery instead */
+	/* opacity: 0; */
+	/* animation: fadeIn 1s ease-in 1s forwards; */
+}
+
+/* Section styles - animations handled by jQuery */
+/* Selectors kept for potential future styling, animations disabled */
+#divOthello,
+#divAndroid,
+#divVisionBoard,
+#divReading {
+	/* CSS animation disabled - using jQuery instead */
+	/* opacity: 0; */
+	/* max-height: 0; */
+	/* overflow: hidden; */
+	/* animation: slideDown 6s ease-out 2s forwards; */
+	/* jQuery handles all animations for these elements */
 }
 
 
