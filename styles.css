@@ -80,3 +80,21 @@ section {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+
+/* Main content area */
+#divContent {
+	position: relative;
+	text-align: center;
+}
+
+/* VisionBoard page styles */
+.intro-text {
+	font-size: medium;
+	font-style: italic;
+}
+
+.visionboard-image {
+	width: 600px;
+	float: right;
+	padding: 0 1.5em;
+}
