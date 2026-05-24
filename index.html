@@ -15,120 +15,109 @@
 	<!-- Font loading optimization -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href='https://fonts.googleapis.com/css?family=Wendy+One&display=swap' rel='stylesheet' type='text/css'>
 
 	<meta name="google-site-verification" content="hsJxFkccqSqtUTz40huuqXBb41TSM0z9NaZ1CUdok9g" />
-
-	<!-- jQuery for animations -->
-	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			$("#divContent, #divOthello, #divAndroid, #divVisionBoard, #divReading").hide();
-
-			$("#divHeader").hide().fadeIn(1000, function () {
-				$("#divContent").show(500, function () {
-					$("#divOthello, #divAndroid, #divVisionBoard, #divReading").slideDown(2000);
-				});
-			});
-
-		});
-	</script>
-	<!-- end jQuery for animations -->
 </head>
 
 <body>
 	<div class="page">
 
-
 		<header id="divHeader">
-			<img src="Images/DD.png" alt="DevinDow" height="64" />
-			<div id="headerTextAndLinks">
+			<a href="index.html" class="logo-link">
+				<img src="Images/DD.png" alt="Devin Dow Logo" class="logo-img" height="48" />
 				<span class="headerText">DevinDow.com</span>
-
-				<span class="socialLinks">
-					<a href="mailto:DevinDow@gmail.com" target="_blank" rel="noopener noreferrer">
-						<img alt="email" src="Images/mail.svg" />
-					</a>
-					<a href="https://www.facebook.com/DevinDow" target="_blank" rel="noopener noreferrer">
-						<img alt="facebook" src="Images/facebook.svg" />
-					</a>
-					<a href="https://github.com/DevinDow" target="_blank" rel="noopener noreferrer">
-						<img alt="GitHub" src="Images/github.svg" />
-					</a>
-					<a href="http://apps.devindow.com" target="_blank" rel="noopener noreferrer">
-						<img alt="Android Apps" src="Images/android.svg" />
-					</a>
-					<a href="https://www.linkedin.com/in/devindow/" target="_blank" rel="noopener noreferrer">
-						<img alt="LinkedIn" src="Images/linkedin.svg" />
-					</a>
-				</span>
-			</div>
+			</a>
+			
+			<nav class="socialLinks">
+				<a href="mailto:DevinDow@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+					<img alt="email" src="Images/mail.svg" />
+				</a>
+				<a href="https://www.facebook.com/DevinDow" target="_blank" rel="noopener noreferrer" title="Facebook">
+					<img alt="facebook" src="Images/facebook.svg" />
+				</a>
+				<a href="https://github.com/DevinDow" target="_blank" rel="noopener noreferrer" title="GitHub">
+					<img alt="GitHub" src="Images/github.svg" />
+				</a>
+				<a href="http://apps.devindow.com" target="_blank" rel="noopener noreferrer" title="Android Apps">
+					<img alt="Android Apps" src="Images/android.svg" />
+				</a>
+				<a href="https://www.linkedin.com/in/devindow/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+					<img alt="LinkedIn" src="Images/linkedin.svg" />
+				</a>
+			</nav>
 		</header>
-		
 
 		<main id="divContent">
+			<div class="project-grid">
+				
+				<section class="card">
+					<div class="card-content">
+						<a href="othello" target="_blank" class="card-image-link">
+							<img class="card-image" alt="Othello game screenshot showing board and discs" src="Images/Othello.gif" loading="lazy" />
+						</a>
+						<h2 class="card-title"><a href="othello" target="_blank">Othello Game</a></h2>
+						<p class="card-desc">An elegant implementation of the classic Othello board game featuring a powerful computer opponent, smooth animations, and game history tracking.</p>
+					</div>
+					<div class="card-footer">
+						<span>Source Code:</span>
+						<span>
+							<a href="https://github.com/DevinDow/Flutter-Othello" target="_blank" rel="noopener noreferrer">Flutter</a>
+							&bull;
+							<a href="https://github.com/DevinDow/Othello" target="_blank" rel="noopener noreferrer">C#</a>
+						</span>
+					</div>
+				</section>
 
-			<section id="divOthello">
-				<a href="othello" target="_blank">
-					<img alt="Android Apps" src="Images/Othello.gif" height="241" loading="lazy" /><br />
-					My "Othello" app<br />
-				</a>
-				<br />
-				Source Code: 
-				<a href="https://github.com/DevinDow/Flutter-Othello" target="_blank" rel="noopener noreferrer">
-					Flutter
-				</a>
-				, 
-				<a href="https://github.com/DevinDow/Othello" target="_blank" rel="noopener noreferrer">
-					C#
-				</a>
-			</section>
+				<section class="card">
+					<div class="card-content">
+						<a href="http://apps.devindow.com" target="_blank" rel="noopener noreferrer" class="card-image-link">
+							<img class="card-image" alt="My Fitness Routines app user interface" src="Images/MyFitnessRoutines.png" loading="lazy" />
+						</a>
+						<h2 class="card-title"><a href="http://apps.devindow.com" target="_blank" rel="noopener noreferrer">My Fitness Routines</a></h2>
+						<p class="card-desc">A highly customizable fitness helper and routine planner designed for Android, helping you manage workouts, track progress, and customize sets.</p>
+					</div>
+					<div class="card-footer">
+						<span>Source Code:</span>
+						<span>
+							<a href="https://github.com/DevinDow/MyFitnessRoutines" target="_blank" rel="noopener noreferrer">C#</a>
+							&bull;
+							<a href="https://github.com/DevinDow/Flutter-fitness" target="_blank" rel="noopener noreferrer">Flutter</a>
+						</span>
+					</div>
+				</section>
 
-			<hr />
+				<section class="card">
+					<div class="card-content">
+						<a href="VisionBoard.html" class="card-image-link">
+							<img class="card-image" alt="VisionBoard user interface showing goal compilation" src="Images/VisionBoard.gif" loading="lazy" />
+						</a>
+						<h2 class="card-title"><a href="VisionBoard.html">VisionBoard for Windows</a></h2>
+						<p class="card-desc">A beautiful visualization utility for Windows to compile goals and favorite imagery, transforming your desktop into an animated fly-through screensaver.</p>
+					</div>
+					<div class="card-footer">
+						<span>Utility App</span>
+						<a href="VisionBoard.html">Learn More &rarr;</a>
+					</div>
+				</section>
 
-			<section id="divAndroid">
-				<a href="http://apps.devindow.com" target="_blank" rel="noopener noreferrer">
-					<img alt="Android Apps" src="Images/MyFitnessRoutines.png" height="240" loading="lazy" /><br />
-					My "My Fitness Routines" Android app<br />
-				</a>
-				<!-- <a href="https://github.com/DevinDow/MyFitnessRoutines/releases" target="_blank" rel="noopener noreferrer">
-					Android Apps on GitHub<br />
-				</a> -->
-				<br />
-				Source Code: 
-				<a href="https://github.com/DevinDow/MyFitnessRoutines" target="_blank" rel="noopener noreferrer">
-					C#
-				</a>
-				, 
-				<a href="https://github.com/DevinDow/Flutter-fitness" target="_blank" rel="noopener noreferrer">
-					Flutter
-				</a>
-			</section>
+				<section class="card">
+					<div class="card-content">
+						<a href="Reading.html" class="card-image-link">
+							<img class="card-image" alt="Curated reading recommendation book cover" src="Images/BraveNewWorld.jpg" loading="lazy" />
+						</a>
+						<h2 class="card-title"><a href="Reading.html">My Reading List</a></h2>
+						<p class="card-desc">A curated compilation of impactful blogs, adventure fiction recommendations, and timeless texts on philosophy, personal growth, and financial wisdom.</p>
+					</div>
+					<div class="card-footer">
+						<span>Curated List</span>
+						<a href="Reading.html">View List &rarr;</a>
+					</div>
+				</section>
 
-			<hr />
-
-			<section id="divVisionBoard">
-				<a href="VisionBoard.html">
-					<img alt="VisionBoard" src="Images/VisionBoard.gif" height="254" loading="lazy" /><br />
-					My "VisionBoard" app for Windows<br />
-				</a>
-			</section>
-
-			<hr />
-
-			<section id="divReading">
-				<a href="Reading.html">
-					<img alt="Brave New World" src="Images/BraveNewWorld.jpg" height="229" loading="lazy" /><br />
-					My Reading List<br />
-				</a>
-			</section>
-			
+			</div>
 		</main>
 
 	</div>
-	
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Vision Board</title>
+	<title>Vision Board - Devin Dow</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,6 @@
 	<!-- Font loading optimization -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href='https://fonts.googleapis.com/css?family=Wendy+One&display=swap' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
@@ -24,55 +22,64 @@
 	<div class="page">
 
 		<header id="divHeader">
-			<a href="index.html"><img src="Images/DD.png" alt="" /></a>
-			<div id="headerTextAndLinks">
+			<a href="index.html" class="logo-link">
+				<img src="Images/DD.png" alt="Devin Dow Logo" class="logo-img" height="48" />
 				<span class="headerText">DevinDow.com</span>
-
-				<span class="socialLinks">
-					<a href="mailto:DevinDow@gmail.com" target="_blank" rel="noopener noreferrer">
-						<img alt="email" src="Images/mail.svg" />
-					</a>
-					<a href="https://www.facebook.com/DevinDow" target="_blank" rel="noopener noreferrer">
-						<img alt="facebook" src="Images/facebook.svg" />
-					</a>
-					<a href="https://github.com/DevinDow" target="_blank" rel="noopener noreferrer">
-						<img alt="GitHub" src="Images/github.svg" />
-					</a>
-					<a href="http://apps.devindow.com" target="_blank" rel="noopener noreferrer">
-						<img alt="Android Apps" src="Images/android.svg" />
-					</a>
-					<a href="https://www.linkedin.com/in/devindow/" target="_blank" rel="noopener noreferrer">
-						<img alt="LinkedIn" src="Images/linkedin.svg" />
-					</a>
-				</span>
-			</div>
+			</a>
+			
+			<nav class="socialLinks">
+				<a href="mailto:DevinDow@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+					<img alt="email" src="Images/mail.svg" />
+				</a>
+				<a href="https://www.facebook.com/DevinDow" target="_blank" rel="noopener noreferrer" title="Facebook">
+					<img alt="facebook" src="Images/facebook.svg" />
+				</a>
+				<a href="https://github.com/DevinDow" target="_blank" rel="noopener noreferrer" title="GitHub">
+					<img alt="GitHub" src="Images/github.svg" />
+				</a>
+				<a href="http://apps.devindow.com" target="_blank" rel="noopener noreferrer" title="Android Apps">
+					<img alt="Android Apps" src="Images/android.svg" />
+				</a>
+				<a href="https://www.linkedin.com/in/devindow/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+					<img alt="LinkedIn" src="Images/linkedin.svg" />
+				</a>
+			</nav>
 		</header>
 
 		<main>
 			<h1>VisionBoard for Windows</h1>
 
-			<br />
+			<div class="visionboard-layout">
+				<div class="visionboard-text">
+					<p class="intro-text">I wrote a rather cool piece of software (if I do say so myself)...</p>
+					
+					<p class="visionboard-desc-body">
+						Create your own personalized Vision Board using local pictures from your computer or inspiring images from the Internet.
+					</p>
+					<p class="visionboard-desc-body">
+						Set your customized board as your <b>desktop background</b>, print a copy to place on your wall or fridge, or watch your visions fly-through with the animated <b>screen saver</b> (my personal favorite feature).
+					</p>
+					<p class="visionboard-desc-body">
+						Enjoy bringing your future goals and visions to life before your eyes!
+					</p>
 
-			<span class="intro-text">I wrote a rather cool piece of software (if I do say so myself)...<br />
-			</span>
-			<br />
+					<section class="download-section">
+						<h2 class="download-title">Get VisionBoard</h2>
+						<p style="margin-bottom: 16px;">Download the application for Windows completely free.</p>
+						<a href="https://github.com/DevinDow/VisionBoard/releases/" target="_blank" rel="noopener noreferrer" class="btn-download">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+							Download VisionBoard.exe
+						</a>
+					</section>
+				</div>
 
-			<img class="visionboard-image" src="Images/VisionBoard.gif" alt="Vision Board screen saver" loading="lazy" />
-			Create your own Vision Board.<br />
-			Use pictures you have on your computer or find pictures on the Internet. <br />
-			Set your Vision Board as you <b>desktop background</b>, or <b>print</b> a copy for your wall or the fridge, 
-			or watch your images fly as your <b>screen saver</b> (my personal favorite feature).<br />
-			Before you know it, your visions will come to you!
-			<br />
-			Enjoy!<br />
-
-			<br />
-			<br />
-
-			<h2>Download</h2>
-			Download <i>VisionBoard.exe</i> <a href="https://github.com/DevinDow/VisionBoard/releases/" target="_blank" rel="noopener noreferrer">here</a> for free.<br />
-
+				<div class="visionboard-image-container">
+					<img class="visionboard-image" src="Images/VisionBoard.gif" alt="Vision Board screensaver preview showing randomized beautiful images flying on screen" loading="lazy" />
+				</div>
+			</div>
 		</main>
+
+	</div>
 
 </body>
 </html>
